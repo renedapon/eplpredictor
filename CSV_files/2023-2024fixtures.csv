@@ -1,4 +1,4 @@
-Date,Home,Home_xG,Away_xG,Away,HomeGoals,AwayGoals
+Date,Home_Team,Home_xG,Away_xG,Away_team,Home_Goals,Away_Goals
 2023-08-11,Burnley,0.3,1.9,Manchester City,0,3
 2023-08-12,Arsenal,0.8,1.2,Nott'ham Forest,2,1
 2023-08-12,Everton,2.7,1.5,Fulham,0,1
