@@ -45,9 +45,12 @@ Contains the prediction notebook.
 
 ---
 **ResultsConclusion/** <br>
-Contains notebooks for creating plots to illustrate our results.
--**PredictionsOutcomeComparisonGW14.ipynb** - to assess how closely our model aligns with bookmaker expectations and to visualise it.
--**ModelvsBet365ProbabilyComparisonGW14.ipynb** - to contrast our model’s predicted probabilities against the implied probabilities from Bet365 odds for all Gameweek 14 fixtures in 2025-2026 season.
+Contains notebooks for creating plots to illustrate our results.  
+- **PredictionsOutcomeComparisonGW14.ipynb** - to assess how closely our model aligns with bookmaker expectations and to visualise it.
+- **gw14_predictions_table.png** - the table created in *PredictionsOutcomeComparisonGW14.ipynb*.
+- **ModelvsBet365ProbabilyComparisonGW14.ipynb** - to contrast our model’s predicted probabilities against the implied probabilities from Bet365 odds for all Gameweek 14 fixtures in 2025-2026 season.
+- **model_vs_bet365.png** - the plot created in *ModelvsBet365ProbabilyComparisonGW14.ipynb*.
+- **bet365odds.png** - shows the odds from Bet365 for gameweek 14 in 2025-2026 season.
 
 ### Analaysis replication:
 Step 1) 
