@@ -3,17 +3,23 @@ A project made during the course Introduction to Data Science in the Univesity o
 
 ### Authors:
 Karl Markus Kiudma, Rene Dapon, Karl Joonas Jõepere
+<br />
+<br />
+<br />
 
 ### Motivation & goal:
 The **English Premier League (EPL)** is the top tier of English football and one of the most competitive and widely followed leagues worldwide. 
 EPL match outcomes are highly unpredictable and heavily debated. Many existing predictions rely on intuition or biased opinions. 
 Modern football data provides measurable performance indicators.
+<br />
 
 **Goal:** Build a machine learning model that predicts match outcomes  
 (**Home Win**, **Draw**, **Away Win**) using match-level and team-level performance metrics.
+<br />
+<br />
+<br />
 
 ### Guide to Contents:
-
 **CSV_files/** <br>
 Contains a subfolder for each season. Every season folder includes all data collected by the scrapers.
 
@@ -51,6 +57,22 @@ Contains notebooks for creating plots to illustrate our results.
 - **ModelvsBet365ProbabilyComparisonGW14.ipynb** - to contrast our model’s predicted probabilities against the implied probabilities from Bet365 odds for all Gameweek 14 fixtures in 2025-2026 season.
 - **model_vs_bet365.png** - the plot created in *ModelvsBet365ProbabilyComparisonGW14.ipynb*.
 - **bet365odds.png** - shows the odds from Bet365 for gameweek 14 in 2025-2026 season.
+<br />
+<br />
+<br />
 
 ### Analaysis replication:
-Step 1) 
+**Steps**
+1) Clone the project onto your device.
+2) Run the following scrapers (in no particular order): 'LeaderboardScraper', 'matchinfo', 'squad&player_stats'.
+3) Follow the instructions provided by each scraper (choosing which seasons to scrape etc).
+4) Now run the scraper 'merger'. This merges the collected leaderboard data with the squad&player_stats scraper data since both datasets contain some matching data, which we want to merge into one.
+5) Open 'predictor' and follow the instructions provided by that notebook. The predictor should display the chances of each team winning or drawing after inputing two teams as parameters.
+* PS! Since the notebook doesn't scrape the newest data automatically, it is advised to run the scrapers after a period of time to have up to date matchdata. Keep in mind this project is created to use seasons from the period 2020-2026 so after the end of the 25/26 season, an updated version is required.
+
+**Troubleshooting**
+* Sometimes, when using scrapers on FBRef.com, it might display an error saying 'No matching table found.' or something along those lines. To solve this, try using CTRL+X on the whole cell and then copying it back in again. Sometimes commenting out some scraping code lies and scraping seasons individually can also work. <br/>
+Since FBRef.com has recently started cracking down on scraping, it has become increasingly difficult and troublesome to scrape data from their website. In the future, it is possible that our scrapers will not function as intended and need updating by using some other type of scrape-blocking bypass.
+* It might happen that after scraping something, the created .csv file is put into the root directory. To solve this, check after scraping if the desired dataset was put into the correct folder and if not, check the root directory and move it into the correct folder manually. To verify the correct file, refer to the creation timestamp of the file. This way you can check that the created file was created just now.
+* Scraping match data when a Premier League match is about to start or is ongoing might cause problems for the scrapers. Since FBRef publishes the match on their website a couple hours before the game actually starts, the initial score values are NaN, which confuses the scraper and likely causes it to throw an error. The other outcome is that the scraper still works when a match with unfinished matchdata is on the website but the score in the fixtures table is just left blank. Verify the data after each scrape to not cause further errors in the process!
+
