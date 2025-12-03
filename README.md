@@ -43,5 +43,11 @@ Contains the prediction notebook.
 - **predictor.ipynb** – used to generate predictions for upcoming matches.  
   At the bottom of the notebook, the user can select home and away teams and view the resulting predictions.
 
+---
+**ResultsConclusion/** <br>
+Contains notebooks for creating plots to illustrate our results.
+-**PredictionsOutcomeComparisonGW14.ipynb** - to assess how closely our model aligns with bookmaker expectations and to visualise it.
+-**ModelvsBet365ProbabilyComparisonGW14.ipynb** - to contrast our model’s predicted probabilities against the implied probabilities from Bet365 odds for all Gameweek 14 fixtures in 2025-2026 season.
+
 ### Analaysis replication:
 Step 1) 
