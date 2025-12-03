@@ -12,7 +12,7 @@ Modern football data provides measurable performance indicators.
 **Goal:** Build a machine learning model that predicts match outcomes  
 (**Home Win**, **Draw**, **Away Win**) using match-level and team-level performance metrics.
 
-### Guide to Contents
+### Guide to Contents:
 
 **CSV_files/** <br>
 Contains a subfolder for each season. Every season folder includes all data collected by the scrapers.
@@ -42,6 +42,15 @@ Contains the prediction notebook.
 
 - **predictor.ipynb** – used to generate predictions for upcoming matches.  
   At the bottom of the notebook, the user can select home and away teams and view the resulting predictions.
+
+---
+**ResultsConclusion/** <br>
+Contains notebooks for creating plots to illustrate our results.  
+- **PredictionsOutcomeComparisonGW14.ipynb** - to assess how closely our model aligns with bookmaker expectations and to visualise it.
+- **gw14_predictions_table.png** - the table created in *PredictionsOutcomeComparisonGW14.ipynb*.
+- **ModelvsBet365ProbabilyComparisonGW14.ipynb** - to contrast our model’s predicted probabilities against the implied probabilities from Bet365 odds for all Gameweek 14 fixtures in 2025-2026 season.
+- **model_vs_bet365.png** - the plot created in *ModelvsBet365ProbabilyComparisonGW14.ipynb*.
+- **bet365odds.png** - shows the odds from Bet365 for gameweek 14 in 2025-2026 season.
 
 ### Analaysis replication:
 Step 1) 
