@@ -12,7 +12,7 @@ Modern football data provides measurable performance indicators.
 **Goal:** Build a machine learning model that predicts match outcomes  
 (**Home Win**, **Draw**, **Away Win**) using match-level and team-level performance metrics.
 
-### Guide to Contents
+### Guide to Contents:
 
 **CSV_files/** <br>
 Contains a subfolder for each season. Every season folder includes all data collected by the scrapers.
